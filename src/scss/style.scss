@@ -1,0 +1,44 @@
+
+body{
+margin: 0;
+
+    header{
+        div:nth-child(1){
+            
+            align-items: center;
+            background-color: darkblue;
+            color: white;
+            display: flex;
+            font-size: 8pt;
+            height: 4vh;
+            justify-content: space-around;
+
+        }
+        div:nth-child(2){
+           
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            #search{
+               
+                border-radius: 4px;
+            }
+
+            p{
+                font-size: 8pt;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    nav{
+        
+        display: flex;
+        justify-content: space-around;
+    }
+}
