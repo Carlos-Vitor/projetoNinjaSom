@@ -1,44 +1,139 @@
+$firstBlue: #052A59;
 
 body{
 margin: 0;
 
     header{
         div:nth-child(1){
-            
             align-items: center;
-            background-color: darkblue;
+            background-color: $firstBlue;
             color: white;
             display: flex;
             font-size: 8pt;
-            height: 4vh;
+            height: 6vh;
             justify-content: space-around;
+
+            p{
+                text-align: center;
+
+                img{
+                    height: 12px;
+                }
+
+            }
+            
 
         }
         div:nth-child(2){
-           
-            display: flex;
-            justify-content: space-around;
             align-items: center;
+            display: flex;
+            height: 80px;
+            justify-content: space-around;
             
             #search{
-               
-                border-radius: 4px;
-            }
-
-            p{
-                font-size: 8pt;
+                display: flex;
+               input{
+                    border: 1px solid lightgray;
+                    border-right: 0;
+                    border-radius: 4px 0 0 4px;
+                    margin: 0;
+                   
+               }
+               button{
+                   background: url('../image/magnifying-glass.png') center no-repeat;
+                   border-radius: 0 4px 4px 0;
+                   border: 1px solid lightgray;
+                   border-left: 0;
+                   margin: 0;
+                   width: 30px;
+                   height: 25px;
+               }
             }
 
             div{
                 display: flex;
+                justify-content: space-around;
+                width: 12vw;
+
+                img{
+                    height: 25px;
+                }
+
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 8pt;
+                    span{
+                        font-size: 6pt;
+                    }
+                }
+            }
+
+            div:nth-child(5){
+                align-items: center;
+                background-color: $firstBlue;
+                color: white;
+                display: flex;
                 flex-direction: column;
+                height: 100px;
+                justify-content: center;
+                width: 60px;
+
+                p{
+                    text-align: center;
+                }
+
+                
             }
         }
     }
 
     nav{
-        
         display: flex;
         justify-content: space-around;
+        font-size: 8pt;
+        
+        div{
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            p:hover{
+                cursor: pointer;   
+                text-decoration: underline  black;
+            }
+        }
+    }
+
+    section{
+        display: flex;
+
+        div{
+            background-image: url("../image/Grupo\ 3.png");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            justify-content: center;
+            width: 100%;
+
+            p{
+                display: flex;
+                flex-direction: column;
+                font-size: 12pt;
+                color: white;
+
+                span{
+                    font-size: 18pt;
+                }
+            }
+
+            button{
+                background-color: transparent;
+                border: none;
+                color: white;
+                text-decoration: underline;
+                width: 70px;
+            }
+        }
     }
 }
