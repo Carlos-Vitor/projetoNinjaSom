@@ -7,6 +7,8 @@ $firstBlue: #052A59;
 body{
 margin: 0;
 overflow-x: hidden;
+transform-style: preserve-3d;
+perspective: 1px;
 
     header{
         div:nth-child(1){
@@ -161,6 +163,7 @@ overflow-x: hidden;
         div:nth-child(3){
             display: flex;
             height: 400px;
+            background-color: white;
 
             span:nth-child(1){
                 align-items: center;
@@ -277,6 +280,158 @@ overflow-x: hidden;
                     }
                 }
             }
+        }
+
+        div:nth-child(4){
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+
+            p:nth-child(1){
+                color: $firstBlue;
+                font-family: Maven;
+                font-size: 16pt;
+
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            p:nth-child(2){
+                font-family: Maven;
+            }
+
+            div:nth-child(3){
+                border-bottom: 1px solid $firstBlue;
+                display: flex;
+                height: 40px;
+                justify-content: space-around;
+                width: 60%;
+
+                button{
+                    background: transparent;
+                    border: 0;
+                    color: $firstBlue;
+                    cursor: pointer;
+                    font-family: Maven;
+                    font-size: 12pt;
+                    font-weight: bold;
+                    outline: none;
+                }
+
+                button:focus{
+                    border-bottom: 4px solid $firstBlue;
+                }
+            }
+
+            #estante{
+                display: flex; 
+                flex-wrap: wrap; 
+                height: 600px;
+                margin-top: 30px;
+                width: 70%;
+
+                .produto{
+                    align-items: center;
+                    border: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 35%;
+                    justify-content: space-around;
+                    margin-top: 40px;
+                    padding: 0;
+                    width: 22%;
+
+                    img{
+                        height: 60px;
+                    }
+
+                    p{
+                        font-size: 8pt;
+                        font-family: Maven;
+                        font-weight: bold;
+                        color: $firstBlue;
+                        margin: 1px;
+                    }
+
+                    p:nth-child(3){
+                        font-size: 6pt;
+                        font-family: Maven;
+                        color: black;
+                        margin: 1px;
+                    }
+
+                    p:nth-child(4){
+                        font-size: 12pt;
+                        color: $firstBlue;
+                        font-family: Maven;
+                        margin: 1px;
+                    }
+                }
+
+            }
+
+            button{
+                background: transparent;
+                border: 1px solid $firstBlue;
+                border-radius: 4px;
+                color: $firstBlue;
+                cursor: pointer;
+                font-family: Maven;
+                height: 40px;
+                margin-bottom: 50px;
+                width: 80px;
+            }
+
+            button:hover{
+                background-color: $firstBlue;
+                color: white;
+            }
+        }
+
+        #parallax{
+            display: flex;
+            flex: 1 0 auto;
+            z-index: -5;
+            background-image: url('../image/instrumento.png');
+            background-size: cover;
+            height: 800px;
+            transform: translateZ(-2px) scale(5);
+            position: relative;
+        }
+
+        #efeito{
+            background-color: rgba($color: black, $alpha: 0.5);
+            display: block;
+            position: relative;
+            height: 300px;
+            z-index: 1;
+
+            div{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                
+                p{
+                    color: white;
+                    font-family: Maven;
+                    font-size: 22pt;
+                    width: 28%;
+                }
+
+                button{
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 2px;
+                    color: white;
+                    font-family: Maven;
+                    height: 30px;
+                }
+            }
+
         }
     }
 }
