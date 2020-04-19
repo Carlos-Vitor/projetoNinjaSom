@@ -1,7 +1,12 @@
 $firstBlue: #052A59;
+@font-face{
+    font-family: Maven;
+    src: local("Maven"), url("../fonts/fonteMaven/static/MavenPro-Regular.ttf");
+}
 
 body{
 margin: 0;
+overflow-x: hidden;
 
     header{
         div:nth-child(1){
@@ -105,9 +110,8 @@ margin: 0;
     }
 
     section{
-        display: flex;
 
-        div{
+        #banner{
             background-image: url("../image/Grupo\ 3.png");
             background-size: cover;
             display: flex;
@@ -117,22 +121,161 @@ margin: 0;
             width: 100%;
 
             p{
+                color: white;
                 display: flex;
                 flex-direction: column;
+                font-family: Maven;
                 font-size: 12pt;
-                color: white;
+                margin-left: 20%;
+                text-align: center;
+                width: 300px;
 
                 span{
-                    font-size: 18pt;
+                    font-size: 26pt;
+                    text-align: center;
+                    width: 300px;
                 }
             }
 
             button{
                 background-color: transparent;
                 border: none;
+                border-bottom: 1px solid white;
                 color: white;
-                text-decoration: underline;
+                cursor: pointer;
+                margin-left: 28%;
+                padding-bottom: 8px;
                 width: 70px;
+            }
+        }
+
+        div:nth-child(2){
+            height: 200px;
+            padding-top: 40px;
+            div{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        
+        div:nth-child(3){
+            display: flex;
+            height: 400px;
+
+            span:nth-child(1){
+                align-items: center;
+                background-image: url("../image/estudio.png");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                width: 50%;
+
+                div{
+                    align-items: center;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Maven;
+                    justify-content: center;
+                    text-align: center;
+                    width: 300px;
+
+                    p:nth-child(1){
+                        font-size: 8pt;
+                        margin: 22px;
+                    }
+
+                    span{
+                        border: 1px solid white;
+                        border-radius: 2px;
+                        width: 14px;
+                    }
+
+                    p:nth-child(3){
+                        font-size: 22pt;
+                        font-weight: bold; 
+
+                        .palavraNegrito{
+                            background: none;
+                            border: none;
+                            font-weight: normal;
+                            margin: 0;
+                            width: auto;
+                        }
+                    }
+
+                    button{
+                        background-color: transparent;
+                        border: 1px solid white;
+                        color: white;
+                        border-radius: 4px;
+                        height: 40px;
+                        width: 40%;
+                    }
+
+                    button:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+
+            span:nth-child(2){
+                align-items: center;
+                background-image: url("../image/instrumento.png");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                width: 50%;
+
+                div{
+                    align-items: center;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Maven;
+                    justify-content: center;
+                    text-align: center;
+                    width: 300px;
+
+                    p:nth-child(1){
+                        font-size: 8pt;
+                        margin: 22px;
+                    }
+
+                    span{
+                        border: 1px solid white;
+                        border-radius: 2px;
+                        width: 14px;
+                    }
+
+                    p:nth-child(3){
+                        font-size: 22pt;
+                        font-weight: bold; 
+
+                        .palavraNegrito{
+                            background: none;
+                            border: none;
+                            font-weight: normal;
+                            margin: 0;
+                            width: auto;
+                        }
+                    }
+
+                    button{
+                        background-color: transparent;
+                        border: 1px solid white;
+                        color: white;
+                        border-radius: 4px;
+                        height: 40px;
+                        width: 40%;
+                    }
+
+                    button:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
             }
         }
     }
