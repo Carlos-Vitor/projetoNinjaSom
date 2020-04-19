@@ -1,7 +1,7 @@
 let productsNS = data; 
 
-let estante = document.querySelector('#estante');
 let produtos = document.querySelectorAll('.produto');
+let destaques = document.querySelectorAll('.destaque');
 let cordas = document.querySelector('#cordas');
 let percussao = document.querySelector('#percussao');
 let sopro = document.querySelector('#sopro');
@@ -43,4 +43,17 @@ function preencherTeclas(){
 
 cordas.onclick = preencherCordas;
 teclas.onclick = preencherTeclas;
-window.onscroll = preencherCordas;
+window.onload = preencherCordas;
+
+function preencherProdutos(){
+    for(let destaque of destaques){
+        for(let product of productsNS){
+                destaque.innerHTML = '<img src = "'+ product.items[0].images[0].imageUrl +'">'+
+                                                    '<p>' + product.productName + '</p>' +
+                                                    '<p>' + product.productTitle + '</p>' +
+                                                    '<p>R$1.499,90</p>'; 
+        }
+    }
+}
+
+window.onscroll = preencherProdutos;

@@ -427,11 +427,274 @@ perspective: 1px;
                     border: 1px solid white;
                     border-radius: 2px;
                     color: white;
+                    cursor: pointer;
                     font-family: Maven;
                     height: 30px;
                 }
+
+                button:hover{
+                    background-color: white;
+                    color: gray;
+                }
             }
 
+        }
+
+        div:nth-child(6){
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 40px;
+
+            p:nth-child(1){
+                color: $firstBlue;
+                font-family: Maven;
+                font-size: 14pt;
+                
+                span{
+                    font-weight: bold;
+                    font-size: 16pt;
+                }
+            }
+
+            p:nth-child(2){
+                font-family: Maven;
+                font-size: 8pt;
+            }
+
+            div{
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                width: 90%;
+
+                .destaque{
+                    align-items: center;
+                    border: 0;
+                    display: flex;
+                    flex-direction: column;
+                    height: 50%;
+                    justify-content: space-around;
+                    padding: 0;
+                    width: 18%;
+
+                    img{
+                        height: 60px;
+                    }
+
+                    p{
+                        font-size: 8pt;
+                        font-family: Maven;
+                        font-weight: bold;
+                        color: $firstBlue;
+                        margin: 1px;
+                    }
+
+                    p:nth-child(3){
+                        font-size: 6pt;
+                        font-family: Maven;
+                        color: black;
+                        margin: 1px;
+                    }
+
+                    p:nth-child(4){
+                        font-size: 12pt;
+                        color: $firstBlue;
+                        font-family: Maven;
+                        margin: 1px;
+                    }
+                }
+
+                button{
+                    background-color: transparent;
+                    border: none;
+                    color: $firstBlue;
+                    cursor: pointer;
+                    font-size: 28pt;
+                }
+            }
+
+            button{
+                background-color: transparent;
+                border: 1px solid $firstBlue;
+                border-radius: 4px;
+                color: $firstBlue;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: $firstBlue;
+                color: white;
+            }
+
+        }
+
+        div:nth-child(7){
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            justify-content: center;
+
+            p:nth-child(1){
+                font-family: Maven;
+                font-size: 14pt;
+                color: $firstBlue;
+
+                span{
+                    font-size: 16pt;
+                    font-weight: bold;
+                }
+            }
+
+            div{
+                align-items: center;
+                display: flex;
+                justify-content: space-around;
+                width: 80%;
+
+            }
+
+            p:nth-child(2){
+                font-family: Maven;
+            }
+
+            button{
+                background-color: transparent;
+                border: none;
+                color: $firstBlue;
+                cursor: pointer;
+                font-size: 28pt;
+            }
+        }
+
+        div:nth-child(8){
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            p:nth-child(1){
+                color: $firstBlue;
+                font-family: Maven;
+                font-size: 16pt;
+            }
+
+            p:nth-child(2){
+                font-family: Maven;
+                width: 70%;
+            }
+        }
+    }
+
+    footer{
+        height: 400px;
+        margin-top: 40px;
+        
+        div:nth-child(1){
+            align-items: center;
+            background-color: $firstBlue;
+            display: flex;
+            justify-content: space-around;
+            height: 85%;
+            div{
+                display: flex;
+                flex-direction: column;
+                height: 70%;
+                width: 20%;
+
+                div{
+                    align-items: flex-start;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 100%;
+
+                    p{
+                        color: white;
+                        font-family: Maven;
+                        font-size: 14pt;
+                    }
+    
+                    a{
+                        color: white;
+                        font-family: Maven;
+                        font-size: 8pt;
+                        text-decoration: none;
+                    }
+
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            #newsletter{
+                align-items: center;
+                background-color: white;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 250px;
+
+                p:nth-child(1){
+                    color: $firstBlue;
+                    font-family: Maven;
+                    font-size: 12pt;
+                    margin-bottom: 0;
+                }
+
+                p:nth-child(2){
+                    color: $firstBlue;
+                    font-size: 8pt;
+                    margin-top: 0;
+                }
+
+                input{
+                    border: 0;
+                    border-bottom: 1px solid $firstBlue;
+                    width: 80%;
+                }
+
+                input::-webkit-input-placeholder{
+                    color: $firstBlue;
+                    font-family: Maven;
+
+                }
+
+                button{
+                    background-color: transparent;
+                    border: 1px solid $firstBlue;
+                    border-radius: 4px;
+                    color: $firstBlue;
+                }
+
+                button:hover{
+                    background-color: $firstBlue;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        div:nth-child(2){
+            align-items: center;
+            display: flex;
+            height: 15%;
+            justify-content: space-around;
+
+            p{
+                font-size: 8pt;
+                font-family: Maven;
+                width: 45%;
+            }
+
+            div{
+                display: flex;
+                justify-content: space-around;
+                width: 20%;
+            }
         }
     }
 }
