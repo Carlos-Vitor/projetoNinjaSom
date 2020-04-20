@@ -22,6 +22,7 @@ perspective: 1px;
 
             p{
                 text-align: center;
+                font-family: Maven;
 
                 img{
                     height: 12px;
@@ -51,6 +52,7 @@ perspective: 1px;
                    border-radius: 0 4px 4px 0;
                    border: 1px solid lightgray;
                    border-left: 0;
+                   font-family: Maven;
                    margin: 0;
                    width: 30px;
                    height: 25px;
@@ -69,6 +71,7 @@ perspective: 1px;
                 p{
                     display: flex;
                     flex-direction: column;
+                    font-family: Maven;
                     font-size: 8pt;
                     span{
                         font-size: 6pt;
@@ -87,6 +90,7 @@ perspective: 1px;
                 width: 60px;
 
                 p{
+                    font-family: Maven;
                     text-align: center;
                 }
 
@@ -99,13 +103,15 @@ perspective: 1px;
         display: flex;
         justify-content: space-around;
         font-size: 8pt;
+        font-family: Maven;
         
         div{
             display: flex;
             justify-content: space-around;
             width: 80%;
             p:hover{
-                cursor: pointer;   
+                cursor: pointer;
+                font-family: Maven;   
                 text-decoration: underline  black;
             }
         }
@@ -147,7 +153,16 @@ perspective: 1px;
                 cursor: pointer;
                 margin-left: 28%;
                 padding-bottom: 8px;
-                width: 70px;
+                text-align: center;
+                width: 85px;
+            }
+
+            button:hover{
+                background-color: white;
+                border: 1px solid white;
+                border-radius: 4px;
+                color: $firstBlue;
+
             }
         }
 
